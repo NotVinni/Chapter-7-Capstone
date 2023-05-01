@@ -35,7 +35,7 @@ Partial Class frmMain
         Me.lblDescTeam1 = New System.Windows.Forms.Label()
         Me.lblTeam1 = New System.Windows.Forms.Label()
         Me.btnAddTeam1 = New System.Windows.Forms.Button()
-        Me.btnSubTeam1 = New System.Windows.Forms.Button()
+        Me.btnBankrupt1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -141,16 +141,16 @@ Partial Class frmMain
         Me.btnAddTeam1.Text = "+"
         Me.btnAddTeam1.UseVisualStyleBackColor = True
         '
-        'btnSubTeam1
+        'btnBankrupt1
         '
-        Me.btnSubTeam1.Enabled = False
-        Me.btnSubTeam1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSubTeam1.Location = New System.Drawing.Point(95, 234)
-        Me.btnSubTeam1.Name = "btnSubTeam1"
-        Me.btnSubTeam1.Size = New System.Drawing.Size(71, 36)
-        Me.btnSubTeam1.TabIndex = 13
-        Me.btnSubTeam1.Text = "-"
-        Me.btnSubTeam1.UseVisualStyleBackColor = True
+        Me.btnBankrupt1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBankrupt1.Location = New System.Drawing.Point(95, 234)
+        Me.btnBankrupt1.Name = "btnBankrupt1"
+        Me.btnBankrupt1.Size = New System.Drawing.Size(71, 36)
+        Me.btnBankrupt1.TabIndex = 14
+        Me.btnBankrupt1.Text = "&Bankrupt"
+        Me.btnBankrupt1.UseVisualStyleBackColor = True
+        Me.btnBankrupt1.Visible = False
         '
         'frmMain
         '
@@ -158,7 +158,7 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 307)
         Me.ControlBox = False
-        Me.Controls.Add(Me.btnSubTeam1)
+        Me.Controls.Add(Me.btnBankrupt1)
         Me.Controls.Add(Me.btnAddTeam1)
         Me.Controls.Add(Me.lblTeam1)
         Me.Controls.Add(Me.lblDescTeam1)
@@ -173,7 +173,7 @@ Partial Class frmMain
         Me.Name = "frmMain"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Wheel of Fortune"
+        Me.Text = """Wheel"" of Fortune"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -190,5 +190,5 @@ Partial Class frmMain
     Friend WithEvents lblDescTeam1 As Label
     Friend WithEvents lblTeam1 As Label
     Friend WithEvents btnAddTeam1 As Button
-    Friend WithEvents btnSubTeam1 As Button
+    Friend WithEvents btnBankrupt1 As Button
 End Class

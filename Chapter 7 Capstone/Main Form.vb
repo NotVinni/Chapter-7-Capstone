@@ -22,7 +22,6 @@ Public Class frmMain
         ' Button starts the timer which ends itself after a set time
         Timer1.Enabled = True
         btnAddTeam1.Enabled = False
-        btnSubTeam1.Enabled = False
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -76,11 +75,13 @@ Public Class frmMain
                 If lblWheel3.Text Like "?,000" Or lblWheel3.Text Like "??,000" Then
                     lblWheel3.Text = lblWheel3.Text.Insert(0, "$")
                 End If
+                If lblWheel2.Text Like "Bankrupt" Then
+                    btnBankrupt1.Visible = True
+                End If
 
 
                 Timer = 0
                 btnAddTeam1.Enabled = True
-                btnSubTeam1.Enabled = True
                 Timer1.Enabled = False
                 Exit For
             End If
@@ -94,6 +95,7 @@ Public Class frmMain
 
     Private Sub btnAddTeam1_Click(sender As Object, e As EventArgs) Handles btnAddTeam1.Click
         ' Button to add money to teams/person. Likely will be done by grabbing values from the listbox unless i figure out how to grab it from the label
+        ' Will maybe try to turn this into a function
 
         If lblWheel2.Text Like "??,000" Or lblWheel2.Text Like "???,000" Then
             Dim intValue As Integer = CInt(ListBox1.Items(word2))
@@ -103,5 +105,14 @@ Public Class frmMain
             MsgBox("Please select a different option.", 0, "Error")
         End If
 
+    End Sub
+
+
+
+    Private Sub btnBankrupt1_Click(sender As Object, e As EventArgs) Handles btnBankrupt1.Click
+        ' Resets Money
+        intTotal = 0
+        lblTeam1.Text = intTotal.ToString("C0")
+        btnBankrupt1.Visible = False
     End Sub
 End Class
