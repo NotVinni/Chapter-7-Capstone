@@ -7,6 +7,7 @@ Option Explicit On
 Option Infer Off
 
 Imports System.Runtime.CompilerServices
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class frmMain
 
@@ -16,19 +17,20 @@ Public Class frmMain
     Dim word As Integer
     Dim word2 As Integer
     Dim word3 As Integer
-    Dim intWheel As Integer
-    Dim intTeam1 As Integer = 0
+    Dim intTotal As Integer
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
         ' Button starts the timer which ends itself after a set time
         Timer1.Enabled = True
         btnAddTeam1.Enabled = False
+        btnPlay.Enabled = False
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ' Variables to help create a scrolling effects
-        Dim int0 As Integer = 0
-        Dim int1 As Integer = 1
-        Dim int2 As Integer = 2
+        Dim intRandom As Integer = 0
+        Dim intRandom2 As Integer = 1
+        Dim intRandom3 As Integer = 2
+
 
         word = rand.Next(0, 24)
         word2 = rand.Next(0, 24)
@@ -40,9 +42,9 @@ Public Class frmMain
         ' Bankrupt method TBA, likely will check if lblwheel2 contains bankrupt and make a button to bankrupt visible 
         For T As Integer = 0 To 0
             If Timer <= 17 Then
-                lblWheel.Text = CStr(ListBox1.Items(int0 + Timer))
-                lblWheel2.Text = CStr(ListBox1.Items(int1 + Timer))
-                lblWheel3.Text = CStr(ListBox1.Items(int2 + Timer))
+                lblWheel.Text = CStr(lstMoney.Items(intRandom + Timer))
+                lblWheel2.Text = CStr(lstMoney.Items(intRandom2 + Timer))
+                lblWheel3.Text = CStr(lstMoney.Items(intRandom3 + Timer))
 
                 ' If statement that adds a $ symbol, want to create a function of some sort for this later maybe
                 If lblWheel.Text Like "?,000" Or lblWheel.Text Like "??,000" Then
@@ -61,9 +63,9 @@ Public Class frmMain
                 Timer1.Interval = 150
 
             Else
-                lblWheel.Text = CStr(ListBox1.Items(word))
-                lblWheel2.Text = CStr(ListBox1.Items(word2))
-                lblWheel3.Text = CStr(ListBox1.Items(word3))
+                lblWheel.Text = CStr(lstMoney.Items(word))
+                lblWheel2.Text = CStr(lstMoney.Items(word2))
+                lblWheel3.Text = CStr(lstMoney.Items(word3))
 
                 ' See line 44
                 If lblWheel.Text Like "?,000" Or lblWheel.Text Like "??,000" Then
@@ -81,6 +83,7 @@ Public Class frmMain
 
 
                 Timer = 0
+                btnPlay.Enabled = True
                 btnAddTeam1.Enabled = True
                 Timer1.Enabled = False
                 Exit For
@@ -91,18 +94,19 @@ Public Class frmMain
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
     End Sub
-    Dim intTotal As Integer
 
     Private Sub btnAddTeam1_Click(sender As Object, e As EventArgs) Handles btnAddTeam1.Click
         ' Button to add money to teams/person. Likely will be done by grabbing values from the listbox unless i figure out how to grab it from the label
         ' Will maybe try to turn this into a function
 
         If lblWheel2.Text Like "??,000" Or lblWheel2.Text Like "???,000" Then
-            Dim intValue As Integer = CInt(ListBox1.Items(word2))
+            Dim intValue As Integer = CInt(lstMoney.Items(word2))
             intTotal += intValue
             lblTeam1.Text = intTotal.ToString("C0")
+            btnAddTeam1.Enabled = False
         Else
             MsgBox("Please select a different option.", 0, "Error")
+            btnAddTeam1.Enabled = False
         End If
 
     End Sub
@@ -114,5 +118,14 @@ Public Class frmMain
         intTotal = 0
         lblTeam1.Text = intTotal.ToString("C0")
         btnBankrupt1.Visible = False
+    End Sub
+
+    Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
+        Dim FILE_NAME As String = "C:\Users\Vinni\source\repos\Chapter-7-Capstone\Chapter 7 Capstone\phrases.txt"
+
+        Dim objReader As New System.IO.StreamReader(FILE_NAME)
+
+        Textbox1.text = objReader.ReadToEnd
+
     End Sub
 End Class

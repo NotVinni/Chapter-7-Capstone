@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,14 @@ Partial Class frmMain
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.lblWheel = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstMoney = New System.Windows.Forms.ListBox()
         Me.lblWheel2 = New System.Windows.Forms.Label()
         Me.lblWheel3 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -36,6 +36,8 @@ Partial Class frmMain
         Me.lblTeam1 = New System.Windows.Forms.Label()
         Me.btnAddTeam1 = New System.Windows.Forms.Button()
         Me.btnBankrupt1 = New System.Windows.Forms.Button()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.lstPhrases = New System.Windows.Forms.ListBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -53,42 +55,48 @@ Partial Class frmMain
         '
         'lblWheel
         '
+        Me.lblWheel.BackColor = System.Drawing.Color.Red
         Me.lblWheel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblWheel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWheel.Location = New System.Drawing.Point(12, 12)
         Me.lblWheel.Name = "lblWheel"
         Me.lblWheel.Size = New System.Drawing.Size(145, 40)
         Me.lblWheel.TabIndex = 1
+        Me.lblWheel.Text = "Bankrupt"
         Me.lblWheel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ListBox1
+        'lstMoney
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"1,000", "5,000", "2,000", "10,000", "Skip", "2,000", "2,000", "1,000", "1,000", "Bankrupt", "5,000", "2,000", "Skip", "1,000", "1,000", "1,000", "Skip", "5,000", "1,000", "1,000", "Bankrupt", "2,000", "1,000", "1,000", "2,000"})
-        Me.ListBox1.Location = New System.Drawing.Point(225, 98)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(134, 147)
-        Me.ListBox1.TabIndex = 5
-        Me.ListBox1.Visible = False
+        Me.lstMoney.FormattingEnabled = True
+        Me.lstMoney.Items.AddRange(New Object() {"1,000", "5,000", "2,000", "10,000", "Skip", "2,000", "2,000", "1,000", "1,000", "Bankrupt", "5,000", "2,000", "Skip", "1,000", "1,000", "1,000", "Skip", "5,000", "1,000", "1,000", "Bankrupt", "2,000", "1,000", "1,000", "2,000"})
+        Me.lstMoney.Location = New System.Drawing.Point(1035, 12)
+        Me.lstMoney.Name = "lstMoney"
+        Me.lstMoney.Size = New System.Drawing.Size(134, 147)
+        Me.lstMoney.TabIndex = 5
+        Me.lstMoney.Visible = False
         '
         'lblWheel2
         '
+        Me.lblWheel2.BackColor = System.Drawing.Color.Lime
         Me.lblWheel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblWheel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWheel2.Location = New System.Drawing.Point(12, 52)
         Me.lblWheel2.Name = "lblWheel2"
         Me.lblWheel2.Size = New System.Drawing.Size(145, 40)
         Me.lblWheel2.TabIndex = 6
+        Me.lblWheel2.Text = "$5000"
         Me.lblWheel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblWheel3
         '
+        Me.lblWheel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lblWheel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblWheel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWheel3.Location = New System.Drawing.Point(12, 92)
         Me.lblWheel3.Name = "lblWheel3"
         Me.lblWheel3.Size = New System.Drawing.Size(145, 40)
         Me.lblWheel3.TabIndex = 7
+        Me.lblWheel3.Text = "$2000"
         Me.lblWheel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnExit
@@ -152,12 +160,31 @@ Partial Class frmMain
         Me.btnBankrupt1.UseVisualStyleBackColor = True
         Me.btnBankrupt1.Visible = False
         '
+        'btnStart
+        '
+        Me.btnStart.Location = New System.Drawing.Point(309, 119)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(112, 40)
+        Me.btnStart.TabIndex = 15
+        Me.btnStart.Text = "&Start Game"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'lstPhrases
+        '
+        Me.lstPhrases.FormattingEnabled = True
+        Me.lstPhrases.Location = New System.Drawing.Point(896, 19)
+        Me.lstPhrases.Name = "lstPhrases"
+        Me.lstPhrases.Size = New System.Drawing.Size(133, 134)
+        Me.lstPhrases.TabIndex = 16
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(600, 307)
+        Me.ClientSize = New System.Drawing.Size(1181, 621)
         Me.ControlBox = False
+        Me.Controls.Add(Me.lstPhrases)
+        Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.btnBankrupt1)
         Me.Controls.Add(Me.btnAddTeam1)
         Me.Controls.Add(Me.lblTeam1)
@@ -166,7 +193,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblWheel3)
         Me.Controls.Add(Me.lblWheel2)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.lstMoney)
         Me.Controls.Add(Me.lblWheel)
         Me.Controls.Add(Me.btnPlay)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -182,7 +209,7 @@ Partial Class frmMain
     Friend WithEvents Timer1 As Timer
     Friend WithEvents btnPlay As Button
     Friend WithEvents lblWheel As Label
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstMoney As ListBox
     Friend WithEvents lblWheel2 As Label
     Friend WithEvents lblWheel3 As Label
     Friend WithEvents btnExit As Button
@@ -191,4 +218,6 @@ Partial Class frmMain
     Friend WithEvents lblTeam1 As Label
     Friend WithEvents btnAddTeam1 As Button
     Friend WithEvents btnBankrupt1 As Button
+    Friend WithEvents btnStart As Button
+    Friend WithEvents lstPhrases As ListBox
 End Class
