@@ -68,6 +68,7 @@ Public Class frmMain
                 lblWheel3.Text = CStr(lstMoney.Items(word3))
 
 
+
                 ' See line 44
                 If lblWheel.Text Like "?,000" Or lblWheel.Text Like "??,000" Then
                     lblWheel.Text = lblWheel.Text.Insert(0, "$")
