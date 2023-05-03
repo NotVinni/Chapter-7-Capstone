@@ -121,11 +121,7 @@ Public Class frmMain
     End Sub
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
-        Dim FILE_NAME As String = "C:\Users\Vinni\source\repos\Chapter-7-Capstone\Chapter 7 Capstone\phrases.txt"
-
-        Dim objReader As New System.IO.StreamReader(FILE_NAME)
-
-        Textbox1.text = objReader.ReadToEnd
+        ' "C:\Users\Vinni\source\repos\Chapter-7-Capstone\Chapter 7 Capstone\phrases.txt"
 
     End Sub
 End Class
