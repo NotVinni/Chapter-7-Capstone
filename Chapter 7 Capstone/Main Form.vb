@@ -34,7 +34,7 @@ Public Class frmMain
     Dim Test1 As Integer
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblRanWord.Text = String.Empty
-
+        txtGuess.Hide()
     End Sub
 
     Private Sub keyboard()
@@ -232,6 +232,22 @@ Public Class frmMain
 
     Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click
         txtGuess.Text = "A"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
     End Sub
 
     Private Sub btnB_Click(sender As Object, e As EventArgs) Handles btnB.Click
@@ -240,33 +256,485 @@ Public Class frmMain
 
     Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
         txtGuess.Text = "C"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
     End Sub
 
     Private Sub btnD_Click(sender As Object, e As EventArgs) Handles btnD.Click
         txtGuess.Text = "D"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
     End Sub
 
     Private Sub btnE_Click(sender As Object, e As EventArgs) Handles btnE.Click
         txtGuess.Text = "E"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
     End Sub
 
     Private Sub btnF_Click(sender As Object, e As EventArgs) Handles btnF.Click
         txtGuess.Text = "F"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
     End Sub
 
     Private Sub btnG_Click(sender As Object, e As EventArgs) Handles btnG.Click
         txtGuess.Text = "G"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
     End Sub
 
     Private Sub btnH_Click(sender As Object, e As EventArgs) Handles btnH.Click
         txtGuess.Text = "H"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
     End Sub
 
     Private Sub btnJ_Click(sender As Object, e As EventArgs) Handles btnJ.Click
         txtGuess.Text = "I"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
     End Sub
 
     Private Sub btnK_Click(sender As Object, e As EventArgs) Handles btnK.Click
         txtGuess.Text = "K"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnL_Click(sender As Object, e As EventArgs) Handles btnL.Click
+        txtGuess.Text = "L"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnM_Click(sender As Object, e As EventArgs) Handles btnM.Click
+        txtGuess.Text = "M"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnN_Click(sender As Object, e As EventArgs) Handles btnN.Click
+        txtGuess.Text = "N"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnO_Click(sender As Object, e As EventArgs) Handles btnO.Click
+        txtGuess.Text = "O"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnP_Click(sender As Object, e As EventArgs) Handles btnP.Click
+        txtGuess.Text = "P"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnQ_Click(sender As Object, e As EventArgs) Handles btnQ.Click
+        txtGuess.Text = "Q"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnR_Click(sender As Object, e As EventArgs) Handles btnR.Click
+        txtGuess.Text = "R"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnS_Click(sender As Object, e As EventArgs) Handles btnS.Click
+        txtGuess.Text = "S"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnT_Click(sender As Object, e As EventArgs) Handles btnT.Click
+        txtGuess.Text = "T"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnU_Click(sender As Object, e As EventArgs) Handles btnU.Click
+        txtGuess.Text = "U"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnV_Click(sender As Object, e As EventArgs) Handles btnV.Click
+        txtGuess.Text = "V"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnW_Click(sender As Object, e As EventArgs) Handles btnW.Click
+        txtGuess.Text = "W"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnX_Click(sender As Object, e As EventArgs) Handles btnX.Click
+        txtGuess.Text = "X"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnY_Click(sender As Object, e As EventArgs) Handles btnY.Click
+        txtGuess.Text = "Y"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnZ_Click(sender As Object, e As EventArgs) Handles btnZ.Click
+        txtGuess.Text = "Z"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub btnI_Click(sender As Object, e As EventArgs) Handles btnI.Click
+        txtGuess.Text = "I"
+        Dim strGuess As String
+        strGuess = txtGuess.Text.Trim.ToUpper()
+
+        If ranWord.Contains(txtGuess.Text.ToUpper) Then
+            For intIndex As Integer = 0 To tempWord.Length - 1
+                If tempWord(intIndex) = txtGuess.Text.ToUpper Then
+                    outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
+                    outputWord = outputWord.Remove(intIndex + 1, 1)
+
+                    tempWord = tempWord.Insert(intIndex, " ")
+                    tempWord = tempWord.Remove(intIndex + 1, 1)
+                End If
+            Next
+        End If
+
+        lblRanWord.Text = outputWord
+    End Sub
+
+    Private Sub txtGuess_TextChanged(sender As Object, e As EventArgs) Handles txtGuess.TextChanged
+
     End Sub
 End Class
