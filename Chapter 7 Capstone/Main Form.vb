@@ -10,8 +10,11 @@ Imports System.Globalization
 Imports System.IO
 Imports System.IO.Pipes
 Imports System.Net.Security
+Imports System.Reflection.Emit
 Imports System.Runtime.CompilerServices
+Imports System.Threading
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar
 
 Public Class frmMain
 
@@ -121,8 +124,8 @@ Public Class frmMain
 
                 Timer = 0
                 Timer1.Enabled = False
-                    Exit For
-                End If
+                Exit For
+            End If
         Next T
     End Sub
 
@@ -228,6 +231,34 @@ Public Class frmMain
             MsgBox("Please select a different option.", 0, "Error")
             btnAddPlay2.Enabled = False
         End If
+    End Sub
+
+    '  Class level variables
+    Dim Tick As Integer
+    Dim DisabledTimer As Integer = 0
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+
+        DisabledTimer += 1
+        secondTimer += 1
+        Tick = DisabledTimer Mod 2
+
+        For T As Integer = 0 To 0
+            If DisabledTimer <= 1 Then
+                If Tick = 0 Then
+                    btnAddPlay2.Enabled = True
+                    btnPlay.Enabled = True
+                Else
+                    btnAddPlay1.Enabled = True
+                    btnPlay.Enabled = True
+                End If
+            End If
+            If DisabledTimer > 1 Then
+                Timer3.Enabled = False
+            End If
+        Next T
+
+        Label1.Text = DisabledTimer.ToString
+        Label2.Text = secondTimer.ToString
     End Sub
 
     Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click
