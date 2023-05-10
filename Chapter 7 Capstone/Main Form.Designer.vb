@@ -41,7 +41,6 @@ Partial Class frmMain
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.menuOpen = New System.Windows.Forms.ToolStripMenuItem()
-        Me.txtGuess = New System.Windows.Forms.TextBox()
         Me.lblRanWord = New System.Windows.Forms.Label()
         Me.btnBankruptPlay2 = New System.Windows.Forms.Button()
         Me.btnAddPlay2 = New System.Windows.Forms.Button()
@@ -76,6 +75,7 @@ Partial Class frmMain
         Me.btnK = New System.Windows.Forms.Button()
         Me.btnB = New System.Windows.Forms.Button()
         Me.btnA = New System.Windows.Forms.Button()
+        Me.txtGuess = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip.SuspendLayout()
         Me.grpLetters.SuspendLayout()
@@ -255,14 +255,6 @@ Partial Class frmMain
         Me.menuOpen.Size = New System.Drawing.Size(155, 26)
         Me.menuOpen.Text = "Open File"
         '
-        'txtGuess
-        '
-        Me.txtGuess.Location = New System.Drawing.Point(676, 164)
-        Me.txtGuess.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtGuess.Name = "txtGuess"
-        Me.txtGuess.Size = New System.Drawing.Size(445, 22)
-        Me.txtGuess.TabIndex = 18
-        '
         'lblRanWord
         '
         Me.lblRanWord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -371,7 +363,7 @@ Partial Class frmMain
         Me.grpLetters.Controls.Add(Me.btnK)
         Me.grpLetters.Controls.Add(Me.btnB)
         Me.grpLetters.Controls.Add(Me.btnA)
-        Me.grpLetters.Location = New System.Drawing.Point(728, 213)
+        Me.grpLetters.Location = New System.Drawing.Point(718, 146)
         Me.grpLetters.Name = "grpLetters"
         Me.grpLetters.Size = New System.Drawing.Size(344, 125)
         Me.grpLetters.TabIndex = 26
@@ -611,6 +603,14 @@ Partial Class frmMain
         Me.btnA.Text = "A"
         Me.btnA.UseVisualStyleBackColor = True
         '
+        'txtGuess
+        '
+        Me.txtGuess.Location = New System.Drawing.Point(676, 287)
+        Me.txtGuess.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtGuess.Name = "txtGuess"
+        Me.txtGuess.Size = New System.Drawing.Size(445, 22)
+        Me.txtGuess.TabIndex = 18
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -673,7 +673,6 @@ Partial Class frmMain
     Friend WithEvents MenuStrip As MenuStrip
     Friend WithEvents ViewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents menuOpen As ToolStripMenuItem
-    Friend WithEvents txtGuess As TextBox
     Friend WithEvents lblRanWord As Label
     Friend WithEvents btnBankruptPlay2 As Button
     Friend WithEvents btnAddPlay2 As Button
@@ -709,4 +708,5 @@ Partial Class frmMain
     Friend WithEvents btnK As Button
     Friend WithEvents btnB As Button
     Friend WithEvents btnA As Button
+    Friend WithEvents txtGuess As TextBox
 End Class
