@@ -2,9 +2,9 @@
 ' Purpose:          Wheel of Fortune type game
 ' Programmer:       Vinni Vongnaraj on 4/26/2023
 
-Option Strict On
+Option Strict Off
 Option Explicit On
-Option Infer Off
+Option Infer On
 
 Imports System.Globalization
 Imports System.IO
@@ -36,6 +36,14 @@ Public Class frmMain
         lblRanWord.Text = String.Empty
 
     End Sub
+
+    Private Sub keyboard()
+
+    End Sub
+
+
+
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
         ' Button starts the timer which ends itself after a set time
@@ -222,5 +230,43 @@ Public Class frmMain
         End If
     End Sub
 
+    Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click
+        txtGuess.Text = "A"
+    End Sub
 
+    Private Sub btnB_Click(sender As Object, e As EventArgs) Handles btnB.Click
+        txtGuess.Text = "B"
+    End Sub
+
+    Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
+        txtGuess.Text = "C"
+    End Sub
+
+    Private Sub btnD_Click(sender As Object, e As EventArgs) Handles btnD.Click
+        txtGuess.Text = "D"
+    End Sub
+
+    Private Sub btnE_Click(sender As Object, e As EventArgs) Handles btnE.Click
+        txtGuess.Text = "E"
+    End Sub
+
+    Private Sub btnF_Click(sender As Object, e As EventArgs) Handles btnF.Click
+        txtGuess.Text = "F"
+    End Sub
+
+    Private Sub btnG_Click(sender As Object, e As EventArgs) Handles btnG.Click
+        txtGuess.Text = "G"
+    End Sub
+
+    Private Sub btnH_Click(sender As Object, e As EventArgs) Handles btnH.Click
+        txtGuess.Text = "H"
+    End Sub
+
+    Private Sub btnJ_Click(sender As Object, e As EventArgs) Handles btnJ.Click
+        txtGuess.Text = "I"
+    End Sub
+
+    Private Sub btnK_Click(sender As Object, e As EventArgs) Handles btnK.Click
+        txtGuess.Text = "K"
+    End Sub
 End Class
