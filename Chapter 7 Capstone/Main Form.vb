@@ -51,6 +51,8 @@ Public Class frmMain
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
         ' Button starts the timer which ends itself after a set time
         Timer1.Enabled = True
+        Timer3.Enabled = True
+        btnAddPlay2.Enabled = False
         btnAddPlay1.Enabled = False
         btnPlay.Enabled = False
         Test1 += 1
@@ -108,22 +110,30 @@ Public Class frmMain
                 If lblWheel3.Text Like "?,000" Or lblWheel3.Text Like "??,000" Then
                     lblWheel3.Text = lblWheel3.Text.Insert(0, "$")
                 End If
-                If lblWheel2.Text Like "Bankrupt" Then
+
+
+                If lblWheel2.Text Like "Bankrupt" And Tick = 0 Then
                     btnBankruptPlay1.Visible = True
+                ElseIf lblWheel2.Text Like "Bankrupt" And Tick = 1 Then
+                    btnBankruptPlay2.Visible = True
                 End If
 
-                ' Determines who is in play
-                If Test1 / 2 = 1 Then
-                    btnPlay.Enabled = True
-                    btnAddPlay2.Enabled = True
-                Else
-                    btnPlay.Enabled = True
+
+                If Tick = 0 Then
                     btnAddPlay1.Enabled = True
+                    btnPlay.Enabled = True
+                Else
+                    btnAddPlay2.Enabled = True
+                    btnPlay.Enabled = True
                 End If
 
 
                 Timer = 0
                 Timer1.Enabled = False
+
+                Label1.Text = DisabledTimer.ToString
+                Label2.Text = secondTimer.ToString
+                Label3.Text = Tick.ToString
                 Exit For
             End If
         Next T
@@ -183,12 +193,13 @@ Public Class frmMain
                 If tempWord(intIndex) = txtGuess.Text.ToUpper Then
                     outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
                     outputWord = outputWord.Remove(intIndex + 1, 1)
-
                     tempWord = tempWord.Insert(intIndex, " ")
                     tempWord = tempWord.Remove(intIndex + 1, 1)
                 End If
             Next
         End If
+
+
 
         lblRanWord.Text = outputWord
     End Sub
@@ -201,7 +212,7 @@ Public Class frmMain
     Private Sub btnBankruptPlay2_Click(sender As Object, e As EventArgs) Handles btnBankruptPlay2.Click
         intTotal2 = 0
         lblPlay2.Text = intTotal2.ToString("C0")
-        btnBankruptPlay1.Visible = False
+        btnBankruptPlay2.Visible = False
     End Sub
 
     Private Sub btnAddTeam1_Click(sender As Object, e As EventArgs) Handles btnAddPlay1.Click
@@ -226,32 +237,32 @@ Public Class frmMain
             Dim intValue As Integer = CInt(lstMoney.Items(word2))
             intTotal2 += intValue
             lblPlay2.Text = intTotal2.ToString("C0")
-            btnAddPlay1.Enabled = False
+            btnAddPlay2.Enabled = False
         Else
             MsgBox("Please select a different option.", 0, "Error")
             btnAddPlay2.Enabled = False
         End If
     End Sub
-
     '  Class level variables
-    Dim Tick As Integer
-    Dim DisabledTimer As Integer = 0
+    Dim Tick As Double
+    Dim DisabledTimer As Double = 0
+
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
 
         DisabledTimer += 1
         secondTimer += 1
+
         Tick = DisabledTimer Mod 2
 
         For T As Integer = 0 To 0
-            If DisabledTimer <= 1 Then
-                If Tick = 0 Then
-                    btnAddPlay2.Enabled = True
-                    btnPlay.Enabled = True
-                Else
-                    btnAddPlay1.Enabled = True
-                    btnPlay.Enabled = True
-                End If
-            End If
+            'If Timer = 17 Then
+            '    If Tick = 0 Then
+            '        btnAddPlay2.Enabled = True
+            '        btnPlay.Enabled = True
+            '    Else
+            '        btnAddPlay1.Enabled = True
+            '        btnPlay.Enabled = True
+            '    End if 
             If DisabledTimer > 1 Then
                 Timer3.Enabled = False
             End If
@@ -259,7 +270,9 @@ Public Class frmMain
 
         Label1.Text = DisabledTimer.ToString
         Label2.Text = secondTimer.ToString
+        Label3.Text = Tick.ToString
     End Sub
+
 
     Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click
         txtGuess.Text = "A"
