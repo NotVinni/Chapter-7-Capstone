@@ -208,7 +208,6 @@ Public Class frmMain
         Dim strGuess As String
         strGuess = txtGuess.Text.Trim.ToUpper()
 
-        lblRanWord.Text = outputWord
 
         If ranWord.Contains(txtGuess.Text.ToUpper) Then
             For intIndex As Integer = 0 To tempWord.Length - 1
@@ -219,8 +218,12 @@ Public Class frmMain
                     tempWord = tempWord.Insert(intIndex, " ")
                     tempWord = tempWord.Remove(intIndex + 1, 1)
                 End If
+                If tempWord.Contains(" ") Then
+
+                End If
             Next
         End If
+        lblRanWord.Text = outputWord
 
         btnAddPlay1.Enabled = True
     End Sub
