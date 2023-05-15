@@ -102,6 +102,7 @@ Partial Class frmMain
         Me.lblWheel22 = New System.Windows.Forms.Label()
         Me.lblWheel21 = New System.Windows.Forms.Label()
         Me.lblDescPhrases = New System.Windows.Forms.Label()
+        Me.txtSolve = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip.SuspendLayout()
         Me.grpLetters.SuspendLayout()
@@ -251,7 +252,7 @@ Partial Class frmMain
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip.Size = New System.Drawing.Size(1149, 24)
+        Me.MenuStrip.Size = New System.Drawing.Size(1532, 24)
         Me.MenuStrip.TabIndex = 17
         Me.MenuStrip.Text = "Open"
         '
@@ -383,10 +384,10 @@ Partial Class frmMain
         Me.grpLetters.Controls.Add(Me.btnK)
         Me.grpLetters.Controls.Add(Me.btnB)
         Me.grpLetters.Controls.Add(Me.btnA)
-        Me.grpLetters.Location = New System.Drawing.Point(421, 171)
-        Me.grpLetters.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grpLetters.Location = New System.Drawing.Point(418, 156)
+        Me.grpLetters.Margin = New System.Windows.Forms.Padding(2)
         Me.grpLetters.Name = "grpLetters"
-        Me.grpLetters.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grpLetters.Padding = New System.Windows.Forms.Padding(2)
         Me.grpLetters.Size = New System.Drawing.Size(258, 102)
         Me.grpLetters.TabIndex = 26
         Me.grpLetters.TabStop = False
@@ -394,7 +395,7 @@ Partial Class frmMain
         'btnX
         '
         Me.btnX.Location = New System.Drawing.Point(131, 67)
-        Me.btnX.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnX.Margin = New System.Windows.Forms.Padding(2)
         Me.btnX.Name = "btnX"
         Me.btnX.Size = New System.Drawing.Size(20, 20)
         Me.btnX.TabIndex = 0
@@ -404,7 +405,7 @@ Partial Class frmMain
         'btnP
         '
         Me.btnP.Location = New System.Drawing.Point(131, 42)
-        Me.btnP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnP.Margin = New System.Windows.Forms.Padding(2)
         Me.btnP.Name = "btnP"
         Me.btnP.Size = New System.Drawing.Size(20, 20)
         Me.btnP.TabIndex = 0
@@ -414,7 +415,7 @@ Partial Class frmMain
         'btnS
         '
         Me.btnS.Location = New System.Drawing.Point(205, 42)
-        Me.btnS.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnS.Margin = New System.Windows.Forms.Padding(2)
         Me.btnS.Name = "btnS"
         Me.btnS.Size = New System.Drawing.Size(20, 20)
         Me.btnS.TabIndex = 0
@@ -424,7 +425,7 @@ Partial Class frmMain
         'btnF
         '
         Me.btnF.Location = New System.Drawing.Point(131, 17)
-        Me.btnF.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnF.Margin = New System.Windows.Forms.Padding(2)
         Me.btnF.Name = "btnF"
         Me.btnF.Size = New System.Drawing.Size(20, 20)
         Me.btnF.TabIndex = 0
@@ -434,7 +435,7 @@ Partial Class frmMain
         'btnU
         '
         Me.btnU.Location = New System.Drawing.Point(60, 67)
-        Me.btnU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnU.Margin = New System.Windows.Forms.Padding(2)
         Me.btnU.Name = "btnU"
         Me.btnU.Size = New System.Drawing.Size(20, 20)
         Me.btnU.TabIndex = 0
@@ -444,7 +445,7 @@ Partial Class frmMain
         'btnM
         '
         Me.btnM.Location = New System.Drawing.Point(60, 42)
-        Me.btnM.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnM.Margin = New System.Windows.Forms.Padding(2)
         Me.btnM.Name = "btnM"
         Me.btnM.Size = New System.Drawing.Size(20, 20)
         Me.btnM.TabIndex = 0
@@ -454,7 +455,7 @@ Partial Class frmMain
         'btnI
         '
         Me.btnI.Location = New System.Drawing.Point(205, 17)
-        Me.btnI.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnI.Margin = New System.Windows.Forms.Padding(2)
         Me.btnI.Name = "btnI"
         Me.btnI.Size = New System.Drawing.Size(20, 20)
         Me.btnI.TabIndex = 0
@@ -464,7 +465,7 @@ Partial Class frmMain
         'btnW
         '
         Me.btnW.Location = New System.Drawing.Point(107, 67)
-        Me.btnW.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnW.Margin = New System.Windows.Forms.Padding(2)
         Me.btnW.Name = "btnW"
         Me.btnW.Size = New System.Drawing.Size(20, 20)
         Me.btnW.TabIndex = 0
@@ -474,7 +475,7 @@ Partial Class frmMain
         'btnO
         '
         Me.btnO.Location = New System.Drawing.Point(107, 42)
-        Me.btnO.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnO.Margin = New System.Windows.Forms.Padding(2)
         Me.btnO.Name = "btnO"
         Me.btnO.Size = New System.Drawing.Size(20, 20)
         Me.btnO.TabIndex = 0
@@ -484,7 +485,7 @@ Partial Class frmMain
         'btnC
         '
         Me.btnC.Location = New System.Drawing.Point(60, 17)
-        Me.btnC.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnC.Margin = New System.Windows.Forms.Padding(2)
         Me.btnC.Name = "btnC"
         Me.btnC.Size = New System.Drawing.Size(20, 20)
         Me.btnC.TabIndex = 0
@@ -494,7 +495,7 @@ Partial Class frmMain
         'btnT
         '
         Me.btnT.Location = New System.Drawing.Point(228, 42)
-        Me.btnT.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnT.Margin = New System.Windows.Forms.Padding(2)
         Me.btnT.Name = "btnT"
         Me.btnT.Size = New System.Drawing.Size(20, 20)
         Me.btnT.TabIndex = 0
@@ -504,7 +505,7 @@ Partial Class frmMain
         'btnE
         '
         Me.btnE.Location = New System.Drawing.Point(107, 17)
-        Me.btnE.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnE.Margin = New System.Windows.Forms.Padding(2)
         Me.btnE.Name = "btnE"
         Me.btnE.Size = New System.Drawing.Size(20, 20)
         Me.btnE.TabIndex = 0
@@ -514,7 +515,7 @@ Partial Class frmMain
         'btnZ
         '
         Me.btnZ.Location = New System.Drawing.Point(181, 67)
-        Me.btnZ.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnZ.Margin = New System.Windows.Forms.Padding(2)
         Me.btnZ.Name = "btnZ"
         Me.btnZ.Size = New System.Drawing.Size(20, 20)
         Me.btnZ.TabIndex = 0
@@ -524,7 +525,7 @@ Partial Class frmMain
         'btnR
         '
         Me.btnR.Location = New System.Drawing.Point(181, 42)
-        Me.btnR.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnR.Margin = New System.Windows.Forms.Padding(2)
         Me.btnR.Name = "btnR"
         Me.btnR.Size = New System.Drawing.Size(20, 20)
         Me.btnR.TabIndex = 0
@@ -534,7 +535,7 @@ Partial Class frmMain
         'btnJ
         '
         Me.btnJ.Location = New System.Drawing.Point(228, 17)
-        Me.btnJ.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnJ.Margin = New System.Windows.Forms.Padding(2)
         Me.btnJ.Name = "btnJ"
         Me.btnJ.Size = New System.Drawing.Size(20, 20)
         Me.btnJ.TabIndex = 0
@@ -544,7 +545,7 @@ Partial Class frmMain
         'btnV
         '
         Me.btnV.Location = New System.Drawing.Point(83, 67)
-        Me.btnV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnV.Margin = New System.Windows.Forms.Padding(2)
         Me.btnV.Name = "btnV"
         Me.btnV.Size = New System.Drawing.Size(20, 20)
         Me.btnV.TabIndex = 0
@@ -554,7 +555,7 @@ Partial Class frmMain
         'btnN
         '
         Me.btnN.Location = New System.Drawing.Point(83, 42)
-        Me.btnN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnN.Margin = New System.Windows.Forms.Padding(2)
         Me.btnN.Name = "btnN"
         Me.btnN.Size = New System.Drawing.Size(20, 20)
         Me.btnN.TabIndex = 0
@@ -564,7 +565,7 @@ Partial Class frmMain
         'btnH
         '
         Me.btnH.Location = New System.Drawing.Point(181, 17)
-        Me.btnH.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnH.Margin = New System.Windows.Forms.Padding(2)
         Me.btnH.Name = "btnH"
         Me.btnH.Size = New System.Drawing.Size(20, 20)
         Me.btnH.TabIndex = 0
@@ -574,7 +575,7 @@ Partial Class frmMain
         'btnY
         '
         Me.btnY.Location = New System.Drawing.Point(157, 67)
-        Me.btnY.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnY.Margin = New System.Windows.Forms.Padding(2)
         Me.btnY.Name = "btnY"
         Me.btnY.Size = New System.Drawing.Size(20, 20)
         Me.btnY.TabIndex = 0
@@ -584,7 +585,7 @@ Partial Class frmMain
         'btnQ
         '
         Me.btnQ.Location = New System.Drawing.Point(157, 42)
-        Me.btnQ.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnQ.Margin = New System.Windows.Forms.Padding(2)
         Me.btnQ.Name = "btnQ"
         Me.btnQ.Size = New System.Drawing.Size(20, 20)
         Me.btnQ.TabIndex = 0
@@ -594,7 +595,7 @@ Partial Class frmMain
         'btnD
         '
         Me.btnD.Location = New System.Drawing.Point(83, 17)
-        Me.btnD.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnD.Margin = New System.Windows.Forms.Padding(2)
         Me.btnD.Name = "btnD"
         Me.btnD.Size = New System.Drawing.Size(20, 20)
         Me.btnD.TabIndex = 0
@@ -604,7 +605,7 @@ Partial Class frmMain
         'btnL
         '
         Me.btnL.Location = New System.Drawing.Point(36, 42)
-        Me.btnL.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnL.Margin = New System.Windows.Forms.Padding(2)
         Me.btnL.Name = "btnL"
         Me.btnL.Size = New System.Drawing.Size(20, 20)
         Me.btnL.TabIndex = 0
@@ -614,7 +615,7 @@ Partial Class frmMain
         'btnG
         '
         Me.btnG.Location = New System.Drawing.Point(157, 17)
-        Me.btnG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnG.Margin = New System.Windows.Forms.Padding(2)
         Me.btnG.Name = "btnG"
         Me.btnG.Size = New System.Drawing.Size(20, 20)
         Me.btnG.TabIndex = 0
@@ -624,7 +625,7 @@ Partial Class frmMain
         'btnK
         '
         Me.btnK.Location = New System.Drawing.Point(12, 42)
-        Me.btnK.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnK.Margin = New System.Windows.Forms.Padding(2)
         Me.btnK.Name = "btnK"
         Me.btnK.Size = New System.Drawing.Size(20, 20)
         Me.btnK.TabIndex = 0
@@ -634,7 +635,7 @@ Partial Class frmMain
         'btnB
         '
         Me.btnB.Location = New System.Drawing.Point(36, 17)
-        Me.btnB.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnB.Margin = New System.Windows.Forms.Padding(2)
         Me.btnB.Name = "btnB"
         Me.btnB.Size = New System.Drawing.Size(20, 20)
         Me.btnB.TabIndex = 0
@@ -644,7 +645,7 @@ Partial Class frmMain
         'btnA
         '
         Me.btnA.Location = New System.Drawing.Point(12, 17)
-        Me.btnA.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnA.Margin = New System.Windows.Forms.Padding(2)
         Me.btnA.Name = "btnA"
         Me.btnA.Size = New System.Drawing.Size(20, 20)
         Me.btnA.TabIndex = 0
@@ -937,12 +938,21 @@ Partial Class frmMain
         Me.lblDescPhrases.TabIndex = 53
         Me.lblDescPhrases.Text = "Please load in the phrases file before proceeding to play"
         '
+        'txtSolve
+        '
+        Me.txtSolve.Location = New System.Drawing.Point(599, 390)
+        Me.txtSolve.Name = "txtSolve"
+        Me.txtSolve.ReadOnly = True
+        Me.txtSolve.Size = New System.Drawing.Size(335, 20)
+        Me.txtSolve.TabIndex = 54
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1532, 801)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtSolve)
         Me.Controls.Add(Me.lblDescPhrases)
         Me.Controls.Add(Me.lblWheel4)
         Me.Controls.Add(Me.lblWheel25)
@@ -1084,4 +1094,5 @@ Partial Class frmMain
     Friend WithEvents lblWheel21 As Label
     Friend WithEvents HowToPlayToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents lblDescPhrases As Label
+    Friend WithEvents txtSolve As TextBox
 End Class

@@ -208,8 +208,6 @@ Public Class frmMain
         Dim strGuess As String
         strGuess = txtGuess.Text.Trim.ToUpper()
 
-
-
         If ranWord.Contains(txtGuess.Text.ToUpper) Then
             For intIndex As Integer = 0 To tempWord.Length - 1
                 If tempWord(intIndex) = txtGuess.Text.ToUpper Then
@@ -219,14 +217,11 @@ Public Class frmMain
                     tempWord = tempWord.Insert(intIndex, " ")
                     tempWord = tempWord.Remove(intIndex + 1, 1)
                 End If
-                If tempWord.Contains(" ") Then
-
-                End If
             Next
         End If
         lblRanWord.Text = outputWord
 
-        lblGuessedLetters.Text = lblGuessedLetters.Text & "" & strGuess
+        lblGuessedLetters.Text = lblGuessedLetters.Text & " " & strGuess
 
         lblRanWord.Text = outputWord
         btnPlay.Enabled = True
@@ -508,5 +503,17 @@ Public Class frmMain
 
     Private Sub btnI_Click(sender As Object, e As EventArgs) Handles btnI.Click
         txtGuess.Text = "I"
+    End Sub
+    Private Sub GSolve()
+        Dim strSA As String = txtSolve.Text.ToString
+        Dim Win As String = "You Won"
+
+        If strSA.ToString.ToUpper = ranWord.ToUpper Then
+            MsgBox(Win)
+        End If
+    End Sub
+
+    Private Sub btnSolve_Click(sender As Object, e As EventArgs) Handles btnSolve.Click
+        GSolve()
     End Sub
 End Class
