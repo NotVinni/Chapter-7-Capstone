@@ -941,7 +941,7 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1149, 666)
+        Me.ClientSize = New System.Drawing.Size(1532, 801)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblDescPhrases)
         Me.Controls.Add(Me.lblWheel4)

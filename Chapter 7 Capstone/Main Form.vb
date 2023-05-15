@@ -209,6 +209,7 @@ Public Class frmMain
         strGuess = txtGuess.Text.Trim.ToUpper()
 
 
+
         If ranWord.Contains(txtGuess.Text.ToUpper) Then
             For intIndex As Integer = 0 To tempWord.Length - 1
                 If tempWord(intIndex) = txtGuess.Text.ToUpper Then
@@ -225,7 +226,10 @@ Public Class frmMain
         End If
         lblRanWord.Text = outputWord
 
-        btnAddPlay1.Enabled = True
+        lblGuessedLetters.Text = lblGuessedLetters.Text & "" & strGuess
+
+        lblRanWord.Text = outputWord
+        btnPlay.Enabled = True
     End Sub
     Private Sub btnBankrupt1_Click(sender As Object, e As EventArgs) Handles btnBankruptPlay1.Click
         ' Resets Money
@@ -500,5 +504,9 @@ Public Class frmMain
 
     Private Sub btnZ_Click(sender As Object, e As EventArgs) Handles btnZ.Click
         txtGuess.Text = "Z"
+    End Sub
+
+    Private Sub btnI_Click(sender As Object, e As EventArgs) Handles btnI.Click
+        txtGuess.Text = "I"
     End Sub
 End Class
