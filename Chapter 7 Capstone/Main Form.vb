@@ -434,4 +434,68 @@ Public Class frmMain
     Private Sub btnK_Click(sender As Object, e As EventArgs) Handles btnK.Click
         txtGuess.Text = "K"
     End Sub
+
+    Private Sub txtGuess_TextChanged(sender As Object, e As EventArgs) Handles txtGuess.TextChanged
+
+    End Sub
+
+    Private Sub btnL_Click(sender As Object, e As EventArgs) Handles btnL.Click
+        txtGuess.Text = "L"
+    End Sub
+
+    Private Sub btnM_Click(sender As Object, e As EventArgs) Handles btnM.Click
+        txtGuess.Text = "M"
+    End Sub
+
+    Private Sub btnN_Click(sender As Object, e As EventArgs) Handles btnN.Click
+        txtGuess.Text = "N"
+    End Sub
+
+    Private Sub btnO_Click(sender As Object, e As EventArgs) Handles btnO.Click
+        txtGuess.Text = "O"
+    End Sub
+
+    Private Sub btnP_Click(sender As Object, e As EventArgs) Handles btnP.Click
+        txtGuess.Text = "P"
+    End Sub
+
+    Private Sub btnQ_Click(sender As Object, e As EventArgs) Handles btnQ.Click
+        txtGuess.Text = "Q"
+    End Sub
+
+    Private Sub btnR_Click(sender As Object, e As EventArgs) Handles btnR.Click
+        txtGuess.Text = "R"
+    End Sub
+
+    Private Sub btnS_Click(sender As Object, e As EventArgs) Handles btnS.Click
+        txtGuess.Text = "S"
+    End Sub
+
+    Private Sub btnT_Click(sender As Object, e As EventArgs) Handles btnT.Click
+        txtGuess.Text = "T"
+    End Sub
+
+    Private Sub btnU_Click(sender As Object, e As EventArgs) Handles btnU.Click
+        txtGuess.Text = "U"
+    End Sub
+
+    Private Sub btnV_Click(sender As Object, e As EventArgs) Handles btnV.Click
+        txtGuess.Text = "V"
+    End Sub
+
+    Private Sub btnW_Click(sender As Object, e As EventArgs) Handles btnW.Click
+        txtGuess.Text = "W"
+    End Sub
+
+    Private Sub btnX_Click(sender As Object, e As EventArgs) Handles btnX.Click
+        txtGuess.Text = "X"
+    End Sub
+
+    Private Sub btnY_Click(sender As Object, e As EventArgs) Handles btnY.Click
+        txtGuess.Text = "Y"
+    End Sub
+
+    Private Sub btnZ_Click(sender As Object, e As EventArgs) Handles btnZ.Click
+        txtGuess.Text = "Z"
+    End Sub
 End Class
