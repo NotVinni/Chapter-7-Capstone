@@ -259,8 +259,8 @@ Partial Class frmMain
         '
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menuOpen, Me.HowToPlayToolStripMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.ViewToolStripMenuItem.Text = "View"
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.ViewToolStripMenuItem.Text = "File"
         '
         'menuOpen
         '

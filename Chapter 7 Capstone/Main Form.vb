@@ -204,7 +204,7 @@ Public Class frmMain
     End Sub
 
     ' Guess Letters 
-    Private Sub btGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
+    Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
         Dim strGuess As String
         strGuess = txtGuess.Text.Trim.ToUpper()
 
@@ -215,13 +215,14 @@ Public Class frmMain
                 If tempWord(intIndex) = txtGuess.Text.ToUpper Then
                     outputWord = outputWord.Insert(intIndex, txtGuess.Text.ToUpper)
                     outputWord = outputWord.Remove(intIndex + 1, 1)
+
                     tempWord = tempWord.Insert(intIndex, " ")
                     tempWord = tempWord.Remove(intIndex + 1, 1)
                 End If
             Next
         End If
 
-        btnPlay.Enabled = True
+        btnAddPlay1.Enabled = True
     End Sub
     Private Sub btnBankrupt1_Click(sender As Object, e As EventArgs) Handles btnBankruptPlay1.Click
         ' Resets Money
@@ -247,6 +248,7 @@ Public Class frmMain
         Else
             MsgBox("Please select a different option.", 0, "Error")
             btnAddPlay1.Enabled = False
+            btnPlay.Enabled = True
         End If
 
     End Sub
@@ -261,6 +263,7 @@ Public Class frmMain
         Else
             MsgBox("Please select a different option.", 0, "Error")
             btnAddPlay2.Enabled = False
+            btnPlay.Enabled = True
         End If
     End Sub
     '  Class level variables
