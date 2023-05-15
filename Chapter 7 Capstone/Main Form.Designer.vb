@@ -26,7 +26,7 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btnPlay = New System.Windows.Forms.Button()
-        Me.lblWheel = New System.Windows.Forms.Label()
+        Me.lblWheel1 = New System.Windows.Forms.Label()
         Me.lstMoney = New System.Windows.Forms.ListBox()
         Me.lblWheel2 = New System.Windows.Forms.Label()
         Me.lblWheel3 = New System.Windows.Forms.Label()
@@ -80,6 +80,29 @@ Partial Class frmMain
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnSolve = New System.Windows.Forms.Button()
+        Me.lblWheel4 = New System.Windows.Forms.Label()
+        Me.lblWheel5 = New System.Windows.Forms.Label()
+        Me.lblWheel7 = New System.Windows.Forms.Label()
+        Me.lblWheel6 = New System.Windows.Forms.Label()
+        Me.lblWheel9 = New System.Windows.Forms.Label()
+        Me.lblWheel8 = New System.Windows.Forms.Label()
+        Me.lblWheel10 = New System.Windows.Forms.Label()
+        Me.lblWheel11 = New System.Windows.Forms.Label()
+        Me.lblWheel19 = New System.Windows.Forms.Label()
+        Me.lblWheel18 = New System.Windows.Forms.Label()
+        Me.lblWheel17 = New System.Windows.Forms.Label()
+        Me.lblWheel16 = New System.Windows.Forms.Label()
+        Me.lblWheel15 = New System.Windows.Forms.Label()
+        Me.lblWheel14 = New System.Windows.Forms.Label()
+        Me.lblWheel13 = New System.Windows.Forms.Label()
+        Me.lblWheel12 = New System.Windows.Forms.Label()
+        Me.lblWheel20 = New System.Windows.Forms.Label()
+        Me.lblWheel25 = New System.Windows.Forms.Label()
+        Me.lblWheel24 = New System.Windows.Forms.Label()
+        Me.lblWheel23 = New System.Windows.Forms.Label()
+        Me.lblWheel22 = New System.Windows.Forms.Label()
+        Me.lblWheel21 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip.SuspendLayout()
         Me.grpLetters.SuspendLayout()
@@ -97,23 +120,23 @@ Partial Class frmMain
         Me.btnPlay.Text = "&Play"
         Me.btnPlay.UseVisualStyleBackColor = True
         '
-        'lblWheel
+        'lblWheel1
         '
-        Me.lblWheel.BackColor = System.Drawing.Color.Red
-        Me.lblWheel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblWheel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWheel.Location = New System.Drawing.Point(8, 26)
-        Me.lblWheel.Name = "lblWheel"
-        Me.lblWheel.Size = New System.Drawing.Size(145, 40)
-        Me.lblWheel.TabIndex = 1
-        Me.lblWheel.Text = "Bankrupt"
-        Me.lblWheel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblWheel1.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel1.Location = New System.Drawing.Point(8, 26)
+        Me.lblWheel1.Name = "lblWheel1"
+        Me.lblWheel1.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel1.TabIndex = 1
+        Me.lblWheel1.Text = "$1,000"
+        Me.lblWheel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lstMoney
         '
         Me.lstMoney.FormattingEnabled = True
-        Me.lstMoney.Items.AddRange(New Object() {"1,000", "5,000", "2,000", "10,000", "Skip", "2,000", "2,000", "1,000", "1,000", "Bankrupt", "5,000", "2,000", "Skip", "1,000", "1,000", "1,000", "Skip", "5,000", "1,000", "1,000", "Bankrupt", "2,000", "1,000", "1,000", "2,000"})
-        Me.lstMoney.Location = New System.Drawing.Point(1031, 26)
+        Me.lstMoney.Items.AddRange(New Object() {"1,000", "5,000", "2,000", "10,000", "Skip", "2,000", "1,000", "1,000", "Bankrupt", "5,000", "2,000", "Skip", "1,000", "2,000", "1,000", "1,000", "Skip", "5,000", "1,000", "1,000", "Bankrupt", "2,000", "1,000", "1,000", "2,000", "1,000", "5,000", "2,000", "10,000", "Skip", "2,000", "1,000", "1,000", "Bankrupt", "5,000", "2,000", "Skip", "1,000", "2,000", "1,000", "1,000", "Skip", "5,000", "1,000", "1,000", "Bankrupt", "2,000", "1,000", "1,000", "2,000", "1,000", "5,000", "2,000", "10,000", "Skip", "2,000", "1,000", "1,000", "Bankrupt", "5,000", "2,000", "Skip", "1,000", "2,000", "1,000", "1,000", "Skip", "5,000", "1,000", "1,000", "Bankrupt", "2,000", "1,000", "1,000", "2,000", "1,000", "5,000", "2,000", "10,000", "Skip", "2,000", "1,000", "1,000", "Bankrupt", "5,000", "2,000", "Skip", "1,000", "2,000", "1,000", "1,000", "Skip", "5,000", "1,000", "1,000", "Bankrupt", "2,000", "1,000", "1,000", "2,000"})
+        Me.lstMoney.Location = New System.Drawing.Point(1031, 33)
         Me.lstMoney.Name = "lstMoney"
         Me.lstMoney.Size = New System.Drawing.Size(134, 147)
         Me.lstMoney.TabIndex = 5
@@ -121,31 +144,31 @@ Partial Class frmMain
         '
         'lblWheel2
         '
-        Me.lblWheel2.BackColor = System.Drawing.Color.Lime
+        Me.lblWheel2.BackColor = System.Drawing.Color.Silver
         Me.lblWheel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblWheel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWheel2.Location = New System.Drawing.Point(8, 66)
+        Me.lblWheel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel2.Location = New System.Drawing.Point(8, 51)
         Me.lblWheel2.Name = "lblWheel2"
-        Me.lblWheel2.Size = New System.Drawing.Size(145, 40)
+        Me.lblWheel2.Size = New System.Drawing.Size(90, 25)
         Me.lblWheel2.TabIndex = 6
         Me.lblWheel2.Text = "$5000"
         Me.lblWheel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblWheel3
         '
-        Me.lblWheel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblWheel3.BackColor = System.Drawing.Color.Silver
         Me.lblWheel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblWheel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWheel3.Location = New System.Drawing.Point(8, 106)
+        Me.lblWheel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel3.Location = New System.Drawing.Point(8, 76)
         Me.lblWheel3.Name = "lblWheel3"
-        Me.lblWheel3.Size = New System.Drawing.Size(145, 40)
+        Me.lblWheel3.Size = New System.Drawing.Size(90, 25)
         Me.lblWheel3.TabIndex = 7
         Me.lblWheel3.Text = "$2000"
         Me.lblWheel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(1058, 533)
+        Me.btnExit.Location = New System.Drawing.Point(1139, 596)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(107, 36)
         Me.btnExit.TabIndex = 8
@@ -155,9 +178,9 @@ Partial Class frmMain
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(159, 66)
+        Me.PictureBox1.Location = New System.Drawing.Point(104, 327)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(109, 40)
+        Me.PictureBox1.Size = New System.Drawing.Size(74, 24)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
@@ -165,7 +188,7 @@ Partial Class frmMain
         'lblDescPlay1
         '
         Me.lblDescPlay1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDescPlay1.Location = New System.Drawing.Point(16, 452)
+        Me.lblDescPlay1.Location = New System.Drawing.Point(355, 515)
         Me.lblDescPlay1.Name = "lblDescPlay1"
         Me.lblDescPlay1.Size = New System.Drawing.Size(145, 40)
         Me.lblDescPlay1.TabIndex = 10
@@ -175,7 +198,7 @@ Partial Class frmMain
         'lblPlay1
         '
         Me.lblPlay1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlay1.Location = New System.Drawing.Point(16, 490)
+        Me.lblPlay1.Location = New System.Drawing.Point(355, 553)
         Me.lblPlay1.Name = "lblPlay1"
         Me.lblPlay1.Size = New System.Drawing.Size(145, 40)
         Me.lblPlay1.TabIndex = 11
@@ -186,7 +209,7 @@ Partial Class frmMain
         '
         Me.btnAddPlay1.Enabled = False
         Me.btnAddPlay1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddPlay1.Location = New System.Drawing.Point(13, 533)
+        Me.btnAddPlay1.Location = New System.Drawing.Point(352, 596)
         Me.btnAddPlay1.Name = "btnAddPlay1"
         Me.btnAddPlay1.Size = New System.Drawing.Size(71, 36)
         Me.btnAddPlay1.TabIndex = 12
@@ -196,7 +219,7 @@ Partial Class frmMain
         'btnBankruptPlay1
         '
         Me.btnBankruptPlay1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBankruptPlay1.Location = New System.Drawing.Point(90, 533)
+        Me.btnBankruptPlay1.Location = New System.Drawing.Point(429, 596)
         Me.btnBankruptPlay1.Name = "btnBankruptPlay1"
         Me.btnBankruptPlay1.Size = New System.Drawing.Size(71, 36)
         Me.btnBankruptPlay1.TabIndex = 14
@@ -206,10 +229,10 @@ Partial Class frmMain
         '
         'btnGuess
         '
-        Me.btnGuess.Location = New System.Drawing.Point(305, 133)
+        Me.btnGuess.Location = New System.Drawing.Point(305, 72)
         Me.btnGuess.Name = "btnGuess"
         Me.btnGuess.Size = New System.Drawing.Size(112, 40)
-        Me.btnGuess.TabIndex = 15
+        Me.btnGuess.TabIndex = 1
         Me.btnGuess.Text = "&Guess"
         Me.btnGuess.UseVisualStyleBackColor = True
         '
@@ -228,7 +251,7 @@ Partial Class frmMain
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip.Size = New System.Drawing.Size(1181, 24)
+        Me.MenuStrip.Size = New System.Drawing.Size(1258, 24)
         Me.MenuStrip.TabIndex = 17
         Me.MenuStrip.Text = "Open"
         '
@@ -266,7 +289,7 @@ Partial Class frmMain
         'btnBankruptPlay2
         '
         Me.btnBankruptPlay2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBankruptPlay2.Location = New System.Drawing.Point(327, 533)
+        Me.btnBankruptPlay2.Location = New System.Drawing.Point(666, 596)
         Me.btnBankruptPlay2.Name = "btnBankruptPlay2"
         Me.btnBankruptPlay2.Size = New System.Drawing.Size(71, 36)
         Me.btnBankruptPlay2.TabIndex = 23
@@ -278,7 +301,7 @@ Partial Class frmMain
         '
         Me.btnAddPlay2.Enabled = False
         Me.btnAddPlay2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddPlay2.Location = New System.Drawing.Point(250, 533)
+        Me.btnAddPlay2.Location = New System.Drawing.Point(589, 596)
         Me.btnAddPlay2.Name = "btnAddPlay2"
         Me.btnAddPlay2.Size = New System.Drawing.Size(71, 36)
         Me.btnAddPlay2.TabIndex = 22
@@ -288,7 +311,7 @@ Partial Class frmMain
         'lblPlay2
         '
         Me.lblPlay2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlay2.Location = New System.Drawing.Point(253, 490)
+        Me.lblPlay2.Location = New System.Drawing.Point(592, 553)
         Me.lblPlay2.Name = "lblPlay2"
         Me.lblPlay2.Size = New System.Drawing.Size(145, 40)
         Me.lblPlay2.TabIndex = 21
@@ -298,7 +321,7 @@ Partial Class frmMain
         'lblDescPlay2
         '
         Me.lblDescPlay2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDescPlay2.Location = New System.Drawing.Point(253, 452)
+        Me.lblDescPlay2.Location = New System.Drawing.Point(592, 515)
         Me.lblDescPlay2.Name = "lblDescPlay2"
         Me.lblDescPlay2.Size = New System.Drawing.Size(145, 40)
         Me.lblDescPlay2.TabIndex = 20
@@ -309,7 +332,7 @@ Partial Class frmMain
         '
         Me.lblGuessedLetters.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblGuessedLetters.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGuessedLetters.Location = New System.Drawing.Point(691, 490)
+        Me.lblGuessedLetters.Location = New System.Drawing.Point(772, 553)
         Me.lblGuessedLetters.Name = "lblGuessedLetters"
         Me.lblGuessedLetters.Size = New System.Drawing.Size(334, 73)
         Me.lblGuessedLetters.TabIndex = 24
@@ -318,7 +341,7 @@ Partial Class frmMain
         'lblDescGuessedLetters
         '
         Me.lblDescGuessedLetters.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDescGuessedLetters.Location = New System.Drawing.Point(687, 465)
+        Me.lblDescGuessedLetters.Location = New System.Drawing.Point(768, 528)
         Me.lblDescGuessedLetters.Name = "lblDescGuessedLetters"
         Me.lblDescGuessedLetters.Size = New System.Drawing.Size(135, 25)
         Me.lblDescGuessedLetters.TabIndex = 25
@@ -627,7 +650,7 @@ Partial Class frmMain
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(200, 259)
+        Me.Label1.Location = New System.Drawing.Point(159, 43)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 27
@@ -636,7 +659,7 @@ Partial Class frmMain
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(245, 259)
+        Me.Label2.Location = New System.Drawing.Point(204, 43)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 28
@@ -645,18 +668,314 @@ Partial Class frmMain
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(232, 299)
+        Me.Label3.Location = New System.Drawing.Point(191, 83)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 29
         Me.Label3.Text = "Label3"
         '
+        'btnSolve
+        '
+        Me.btnSolve.Location = New System.Drawing.Point(305, 119)
+        Me.btnSolve.Name = "btnSolve"
+        Me.btnSolve.Size = New System.Drawing.Size(112, 40)
+        Me.btnSolve.TabIndex = 30
+        Me.btnSolve.Text = "&Solve"
+        Me.btnSolve.UseVisualStyleBackColor = True
+        '
+        'lblWheel4
+        '
+        Me.lblWheel4.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel4.Location = New System.Drawing.Point(8, 101)
+        Me.lblWheel4.Name = "lblWheel4"
+        Me.lblWheel4.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel4.TabIndex = 31
+        Me.lblWheel4.Text = "$10,000"
+        Me.lblWheel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel5
+        '
+        Me.lblWheel5.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel5.Location = New System.Drawing.Point(8, 126)
+        Me.lblWheel5.Name = "lblWheel5"
+        Me.lblWheel5.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel5.TabIndex = 32
+        Me.lblWheel5.Text = "Skip"
+        Me.lblWheel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel7
+        '
+        Me.lblWheel7.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel7.Location = New System.Drawing.Point(8, 176)
+        Me.lblWheel7.Name = "lblWheel7"
+        Me.lblWheel7.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel7.TabIndex = 34
+        Me.lblWheel7.Text = "$1,000"
+        Me.lblWheel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel6
+        '
+        Me.lblWheel6.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel6.Location = New System.Drawing.Point(8, 151)
+        Me.lblWheel6.Name = "lblWheel6"
+        Me.lblWheel6.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel6.TabIndex = 33
+        Me.lblWheel6.Text = "$2,000"
+        Me.lblWheel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel9
+        '
+        Me.lblWheel9.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel9.Location = New System.Drawing.Point(8, 226)
+        Me.lblWheel9.Name = "lblWheel9"
+        Me.lblWheel9.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel9.TabIndex = 36
+        Me.lblWheel9.Text = "Bankrupt"
+        Me.lblWheel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel8
+        '
+        Me.lblWheel8.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel8.Location = New System.Drawing.Point(8, 201)
+        Me.lblWheel8.Name = "lblWheel8"
+        Me.lblWheel8.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel8.TabIndex = 35
+        Me.lblWheel8.Text = "$1,000"
+        Me.lblWheel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel10
+        '
+        Me.lblWheel10.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel10.Location = New System.Drawing.Point(8, 251)
+        Me.lblWheel10.Name = "lblWheel10"
+        Me.lblWheel10.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel10.TabIndex = 37
+        Me.lblWheel10.Text = "$5,000"
+        Me.lblWheel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel11
+        '
+        Me.lblWheel11.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel11.Location = New System.Drawing.Point(8, 276)
+        Me.lblWheel11.Name = "lblWheel11"
+        Me.lblWheel11.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel11.TabIndex = 38
+        Me.lblWheel11.Text = "$2,000"
+        Me.lblWheel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel19
+        '
+        Me.lblWheel19.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel19.Location = New System.Drawing.Point(8, 476)
+        Me.lblWheel19.Name = "lblWheel19"
+        Me.lblWheel19.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel19.TabIndex = 46
+        Me.lblWheel19.Text = "$1,000"
+        Me.lblWheel19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel18
+        '
+        Me.lblWheel18.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel18.Location = New System.Drawing.Point(8, 451)
+        Me.lblWheel18.Name = "lblWheel18"
+        Me.lblWheel18.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel18.TabIndex = 45
+        Me.lblWheel18.Text = "$5,000"
+        Me.lblWheel18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel17
+        '
+        Me.lblWheel17.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel17.Location = New System.Drawing.Point(8, 426)
+        Me.lblWheel17.Name = "lblWheel17"
+        Me.lblWheel17.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel17.TabIndex = 44
+        Me.lblWheel17.Text = "Skip"
+        Me.lblWheel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel16
+        '
+        Me.lblWheel16.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel16.Location = New System.Drawing.Point(8, 401)
+        Me.lblWheel16.Name = "lblWheel16"
+        Me.lblWheel16.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel16.TabIndex = 43
+        Me.lblWheel16.Text = "$1,000"
+        Me.lblWheel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel15
+        '
+        Me.lblWheel15.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel15.Location = New System.Drawing.Point(8, 376)
+        Me.lblWheel15.Name = "lblWheel15"
+        Me.lblWheel15.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel15.TabIndex = 42
+        Me.lblWheel15.Text = "$1,000"
+        Me.lblWheel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel14
+        '
+        Me.lblWheel14.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel14.Location = New System.Drawing.Point(8, 351)
+        Me.lblWheel14.Name = "lblWheel14"
+        Me.lblWheel14.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel14.TabIndex = 41
+        Me.lblWheel14.Text = "$2,000"
+        Me.lblWheel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel13
+        '
+        Me.lblWheel13.BackColor = System.Drawing.Color.Lime
+        Me.lblWheel13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel13.Location = New System.Drawing.Point(8, 326)
+        Me.lblWheel13.Name = "lblWheel13"
+        Me.lblWheel13.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel13.TabIndex = 40
+        Me.lblWheel13.Text = "$1,000"
+        Me.lblWheel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel12
+        '
+        Me.lblWheel12.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel12.Location = New System.Drawing.Point(8, 301)
+        Me.lblWheel12.Name = "lblWheel12"
+        Me.lblWheel12.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel12.TabIndex = 39
+        Me.lblWheel12.Text = "Skip"
+        Me.lblWheel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel20
+        '
+        Me.lblWheel20.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel20.Location = New System.Drawing.Point(8, 501)
+        Me.lblWheel20.Name = "lblWheel20"
+        Me.lblWheel20.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel20.TabIndex = 47
+        Me.lblWheel20.Text = "$1,000"
+        Me.lblWheel20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel25
+        '
+        Me.lblWheel25.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel25.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel25.Location = New System.Drawing.Point(8, 626)
+        Me.lblWheel25.Name = "lblWheel25"
+        Me.lblWheel25.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel25.TabIndex = 52
+        Me.lblWheel25.Text = "$2,000"
+        Me.lblWheel25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel24
+        '
+        Me.lblWheel24.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel24.Location = New System.Drawing.Point(8, 601)
+        Me.lblWheel24.Name = "lblWheel24"
+        Me.lblWheel24.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel24.TabIndex = 51
+        Me.lblWheel24.Text = "$1,000"
+        Me.lblWheel24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel23
+        '
+        Me.lblWheel23.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel23.Location = New System.Drawing.Point(8, 576)
+        Me.lblWheel23.Name = "lblWheel23"
+        Me.lblWheel23.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel23.TabIndex = 50
+        Me.lblWheel23.Text = "$1,000"
+        Me.lblWheel23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel22
+        '
+        Me.lblWheel22.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel22.Location = New System.Drawing.Point(8, 551)
+        Me.lblWheel22.Name = "lblWheel22"
+        Me.lblWheel22.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel22.TabIndex = 49
+        Me.lblWheel22.Text = "$2,000"
+        Me.lblWheel22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWheel21
+        '
+        Me.lblWheel21.BackColor = System.Drawing.Color.Silver
+        Me.lblWheel21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblWheel21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWheel21.Location = New System.Drawing.Point(8, 526)
+        Me.lblWheel21.Name = "lblWheel21"
+        Me.lblWheel21.Size = New System.Drawing.Size(90, 25)
+        Me.lblWheel21.TabIndex = 48
+        Me.lblWheel21.Text = "Bankrupt"
+        Me.lblWheel21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1181, 621)
+        Me.ClientSize = New System.Drawing.Size(1258, 651)
         Me.ControlBox = False
+        Me.Controls.Add(Me.lblWheel4)
+        Me.Controls.Add(Me.lblWheel25)
+        Me.Controls.Add(Me.lblWheel24)
+        Me.Controls.Add(Me.lblWheel23)
+        Me.Controls.Add(Me.lblWheel22)
+        Me.Controls.Add(Me.lblWheel21)
+        Me.Controls.Add(Me.lblWheel20)
+        Me.Controls.Add(Me.lblWheel19)
+        Me.Controls.Add(Me.lblWheel18)
+        Me.Controls.Add(Me.lblWheel17)
+        Me.Controls.Add(Me.lblWheel16)
+        Me.Controls.Add(Me.lblWheel15)
+        Me.Controls.Add(Me.lblWheel14)
+        Me.Controls.Add(Me.lblWheel13)
+        Me.Controls.Add(Me.lblWheel12)
+        Me.Controls.Add(Me.lblWheel11)
+        Me.Controls.Add(Me.lblWheel10)
+        Me.Controls.Add(Me.lblWheel9)
+        Me.Controls.Add(Me.lblWheel8)
+        Me.Controls.Add(Me.lblWheel7)
+        Me.Controls.Add(Me.lblWheel6)
+        Me.Controls.Add(Me.lblWheel5)
+        Me.Controls.Add(Me.btnSolve)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -680,7 +999,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.lblWheel3)
         Me.Controls.Add(Me.lblWheel2)
         Me.Controls.Add(Me.lstMoney)
-        Me.Controls.Add(Me.lblWheel)
+        Me.Controls.Add(Me.lblWheel1)
         Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.MenuStrip)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -700,7 +1019,7 @@ Partial Class frmMain
 
     Friend WithEvents Timer1 As Timer
     Friend WithEvents btnPlay As Button
-    Friend WithEvents lblWheel As Label
+    Friend WithEvents lblWheel1 As Label
     Friend WithEvents lstMoney As ListBox
     Friend WithEvents lblWheel2 As Label
     Friend WithEvents lblWheel3 As Label
@@ -755,4 +1074,27 @@ Partial Class frmMain
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents btnSolve As Button
+    Friend WithEvents lblWheel4 As Label
+    Friend WithEvents lblWheel5 As Label
+    Friend WithEvents lblWheel7 As Label
+    Friend WithEvents lblWheel6 As Label
+    Friend WithEvents lblWheel9 As Label
+    Friend WithEvents lblWheel8 As Label
+    Friend WithEvents lblWheel10 As Label
+    Friend WithEvents lblWheel11 As Label
+    Friend WithEvents lblWheel19 As Label
+    Friend WithEvents lblWheel18 As Label
+    Friend WithEvents lblWheel17 As Label
+    Friend WithEvents lblWheel16 As Label
+    Friend WithEvents lblWheel15 As Label
+    Friend WithEvents lblWheel14 As Label
+    Friend WithEvents lblWheel13 As Label
+    Friend WithEvents lblWheel12 As Label
+    Friend WithEvents lblWheel20 As Label
+    Friend WithEvents lblWheel25 As Label
+    Friend WithEvents lblWheel24 As Label
+    Friend WithEvents lblWheel23 As Label
+    Friend WithEvents lblWheel22 As Label
+    Friend WithEvents lblWheel21 As Label
 End Class

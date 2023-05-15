@@ -13,6 +13,7 @@ Imports System.Net.Security
 Imports System.Reflection.Emit
 Imports System.Runtime.CompilerServices
 Imports System.Threading
+Imports System.Windows
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar
 
@@ -34,7 +35,7 @@ Public Class frmMain
     Dim tempWord As String
     Dim outputWord As String
 
-    Dim Test1 As Integer
+
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblRanWord.Text = String.Empty
 
@@ -55,15 +56,60 @@ Public Class frmMain
         btnAddPlay2.Enabled = False
         btnAddPlay1.Enabled = False
         btnPlay.Enabled = False
-        Test1 += 1
     End Sub
 
+    ' Variables to help create a scrolling effects
+    Dim intRandom As Integer = 0
+    Dim intRandom2 As Integer = 1
+    Dim intRandom3 As Integer = 2
+    Dim intRandom4 As Integer = 3
+    Dim intRandom5 As Integer = 4
+    Dim intRandom6 As Integer = 5
+    Dim intRandom7 As Integer = 6
+    Dim intRandom8 As Integer = 7
+    Dim intRandom9 As Integer = 8
+    Dim intRandom10 As Integer = 9
+    Dim intRandom11 As Integer = 10
+    Dim intRandom12 As Integer = 11
+    Dim intRandom13 As Integer = 12
+    Dim intRandom14 As Integer = 13
+    Dim intRandom15 As Integer = 14
+    Dim intRandom16 As Integer = 15
+    Dim intRandom17 As Integer = 16
+    Dim intRandom18 As Integer = 17
+    Dim intRandom19 As Integer = 18
+    Dim intRandom20 As Integer = 19
+    Dim intRandom21 As Integer = 20
+    Dim intRandom22 As Integer = 21
+    Dim intRandom23 As Integer = 22
+    Dim intRandom24 As Integer = 23
+    Dim intRandom25 As Integer = 24
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        ' Variables to help create a scrolling effects
-        Dim intRandom As Integer = 0
-        Dim intRandom2 As Integer = 1
-        Dim intRandom3 As Integer = 2
-
+        intRandom += 1
+        intRandom2 += 1
+        intRandom3 += 1
+        intRandom4 += 1
+        intRandom5 += 1
+        intRandom6 += 1
+        intRandom7 += 1
+        intRandom8 += 1
+        intRandom9 += 1
+        intRandom10 += 1
+        intRandom11 += 1
+        intRandom12 += 1
+        intRandom13 += 1
+        intRandom14 += 1
+        intRandom15 += 1
+        intRandom16 += 1
+        intRandom17 += 1
+        intRandom18 += 1
+        intRandom19 += 1
+        intRandom20 += 1
+        intRandom21 += 1
+        intRandom22 += 1
+        intRandom23 += 1
+        intRandom24 += 1
+        intRandom25 += 1
 
         word = rand.Next(0, 24)
         word2 = rand.Next(0, 24)
@@ -72,16 +118,39 @@ Public Class frmMain
         Timer += 1
 
         ' Loop to change the labels color and create a scrolling effect which ends on a random number
-        ' Bankrupt method TBA, likely will check if lblwheel2 contains bankrupt and make a button to bankrupt visible 
+        ' Bankrupt method TBA, likely will check if lblwheel13 contains bankrupt and make a button to bankrupt visible 
         For T As Integer = 0 To 0
-            If Timer <= 17 Then
-                lblWheel.Text = CStr(lstMoney.Items(intRandom + Timer))
-                lblWheel2.Text = CStr(lstMoney.Items(intRandom2 + Timer))
-                lblWheel3.Text = CStr(lstMoney.Items(intRandom3 + Timer))
+            If Timer <= 25 Then
+                lblWheel1.Text = CStr(lstMoney.Items(intRandom))
+                lblWheel2.Text = CStr(lstMoney.Items(intRandom2))
+                lblWheel3.Text = CStr(lstMoney.Items(intRandom3))
+                lblWheel4.Text = CStr(lstMoney.Items(intRandom4))
+                lblWheel5.Text = CStr(lstMoney.Items(intRandom5))
+                lblWheel6.Text = CStr(lstMoney.Items(intRandom6))
+                lblWheel7.Text = CStr(lstMoney.Items(intRandom7))
+                lblWheel8.Text = CStr(lstMoney.Items(intRandom9))
+                lblWheel9.Text = CStr(lstMoney.Items(intRandom10))
+                lblWheel10.Text = CStr(lstMoney.Items(intRandom11))
+                lblWheel11.Text = CStr(lstMoney.Items(intRandom12))
+                lblWheel12.Text = CStr(lstMoney.Items(intRandom13))
+                lblWheel13.Text = CStr(lstMoney.Items(intRandom14))
+                lblWheel14.Text = CStr(lstMoney.Items(intRandom14))
+                lblWheel15.Text = CStr(lstMoney.Items(intRandom15))
+                lblWheel16.Text = CStr(lstMoney.Items(intRandom16))
+                lblWheel17.Text = CStr(lstMoney.Items(intRandom17))
+                lblWheel18.Text = CStr(lstMoney.Items(intRandom18))
+                lblWheel19.Text = CStr(lstMoney.Items(intRandom19))
+                lblWheel20.Text = CStr(lstMoney.Items(intRandom20))
+                lblWheel21.Text = CStr(lstMoney.Items(intRandom21))
+                lblWheel22.Text = CStr(lstMoney.Items(intRandom22))
+                lblWheel23.Text = CStr(lstMoney.Items(intRandom23))
+                lblWheel24.Text = CStr(lstMoney.Items(intRandom24))
+                lblWheel25.Text = CStr(lstMoney.Items(intRandom25))
+
 
                 ' If statement that adds a $ symbol, want to create a function of some sort for this later maybe
-                If lblWheel.Text Like "?,000" Or lblWheel.Text Like "??,000" Then
-                    lblWheel.Text = lblWheel.Text.Insert(0, "$")
+                If lblWheel1.Text Like "?,000" Or lblWheel1.Text Like "??,000" Then
+                    lblWheel1.Text = lblWheel1.Text.Insert(0, "$")
                 End If
                 If lblWheel2.Text Like "?,000" Or lblWheel2.Text Like "??,000" Then
                     lblWheel2.Text = lblWheel2.Text.Insert(0, "$")
@@ -90,19 +159,19 @@ Public Class frmMain
                     lblWheel3.Text = lblWheel3.Text.Insert(0, "$")
                 End If
 
-                lblWheel.BackColor = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256))
-                lblWheel2.BackColor = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256))
-                lblWheel3.BackColor = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256))
-                Timer1.Interval = 150
+                'lblWheel1.BackColor = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256))
+                'lblWheel2.BackColor = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256))
+                'lblWheel3.BackColor = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256))
+                Timer1.Interval = 300
 
             Else
-                lblWheel.Text = CStr(lstMoney.Items(word))
+                lblWheel1.Text = CStr(lstMoney.Items(word))
                 lblWheel2.Text = CStr(lstMoney.Items(word2))
                 lblWheel3.Text = CStr(lstMoney.Items(word3))
 
                 ' See line 44
-                If lblWheel.Text Like "?,000" Or lblWheel.Text Like "??,000" Then
-                    lblWheel.Text = lblWheel.Text.Insert(0, "$")
+                If lblWheel1.Text Like "?,000" Or lblWheel1.Text Like "??,000" Then
+                    lblWheel1.Text = lblWheel1.Text.Insert(0, "$")
                 End If
                 If lblWheel2.Text Like "?,000" Or lblWheel2.Text Like "??,000" Then
                     lblWheel2.Text = lblWheel2.Text.Insert(0, "$")
@@ -112,9 +181,9 @@ Public Class frmMain
                 End If
 
 
-                If lblWheel2.Text Like "Bankrupt" And Tick = 0 Then
+                If lblWheel13.Text Like "Bankrupt" And Tick = 0 Then
                     btnBankruptPlay1.Visible = True
-                ElseIf lblWheel2.Text Like "Bankrupt" And Tick = 1 Then
+                ElseIf lblWheel13.Text Like "Bankrupt" And Tick = 1 Then
                     btnBankruptPlay2.Visible = True
                 End If
 
@@ -219,7 +288,7 @@ Public Class frmMain
         ' Button to add money to teams/person. Likely will be done by grabbing values from the listbox unless i figure out how to grab it from the label
         ' Will maybe try to turn this into a function
 
-        If lblWheel2.Text Like "??,000" Or lblWheel2.Text Like "???,000" Then
+        If lblWheel13.Text Like "??,000" Or lblWheel13.Text Like "???,000" Then
             Dim intValue As Integer = CInt(lstMoney.Items(word2))
             intTotal1 += intValue
             lblPlay1.Text = intTotal1.ToString("C0")
@@ -233,7 +302,7 @@ Public Class frmMain
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnAddPlay2.Click
 
-        If lblWheel2.Text Like "??,000" Or lblWheel2.Text Like "???,000" Then
+        If lblWheel13.Text Like "??,000" Or lblWheel13.Text Like "???,000" Then
             Dim intValue As Integer = CInt(lstMoney.Items(word2))
             intTotal2 += intValue
             lblPlay2.Text = intTotal2.ToString("C0")
@@ -248,25 +317,13 @@ Public Class frmMain
     Dim DisabledTimer As Double = 0
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-
         DisabledTimer += 1
-        secondTimer += 1
 
         Tick = DisabledTimer Mod 2
 
-        For T As Integer = 0 To 0
-            'If Timer = 17 Then
-            '    If Tick = 0 Then
-            '        btnAddPlay2.Enabled = True
-            '        btnPlay.Enabled = True
-            '    Else
-            '        btnAddPlay1.Enabled = True
-            '        btnPlay.Enabled = True
-            '    End if 
-            If DisabledTimer > 1 Then
-                Timer3.Enabled = False
-            End If
-        Next T
+        If DisabledTimer > 1 Then
+            Timer3.Enabled = False
+        End If
 
         Label1.Text = DisabledTimer.ToString
         Label2.Text = secondTimer.ToString
@@ -313,4 +370,5 @@ Public Class frmMain
     Private Sub btnK_Click(sender As Object, e As EventArgs) Handles btnK.Click
         txtGuess.Text = "K"
     End Sub
+
 End Class
