@@ -1,0 +1,6 @@
+How To Play:
+1. Load the file of phrases into the form in order to get a random phrase to guess
+2. Spin the "wheel" by pressing play 
+3. After the spin end, add money, bankrupt, or skip your turn based on what was rolled and guess a letter
+4. Alternate turns until either player guesses the word
+5. Restart the form in order to play again 
